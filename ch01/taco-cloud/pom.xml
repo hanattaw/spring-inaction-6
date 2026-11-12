@@ -12,7 +12,7 @@
     <relativePath />
   </parent>
   <groupId>sia</groupId>
-  <artifactId>taco-cloud</artifactId>
+  <artifactId>taco-cloud-01</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <name>taco-cloud</name>
   <description>Taco Cloud Example</description>
