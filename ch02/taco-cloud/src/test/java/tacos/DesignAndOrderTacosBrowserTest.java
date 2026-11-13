@@ -3,8 +3,8 @@ package tacos;
 import static org.assertj.core.api.Assertions.assertThat;
 
 import java.util.List;
-import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
+import java.time.Duration;
 
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
@@ -15,10 +15,12 @@ import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.context.SpringBootTest.WebEnvironment;
-import org.springframework.boot.test.web.client.TestRestTemplate;
+import org.springframework.boot.resttestclient.TestRestTemplate;
+import org.springframework.boot.resttestclient.autoconfigure.AutoConfigureTestRestTemplate;
 import org.springframework.boot.test.web.server.LocalServerPort;
 
 @SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
+@AutoConfigureTestRestTemplate
 public class DesignAndOrderTacosBrowserTest {
 
   private static HtmlUnitDriver browser;
@@ -33,7 +35,7 @@ public class DesignAndOrderTacosBrowserTest {
   public static void setup() {
     browser = new HtmlUnitDriver();
     browser.manage().timeouts()
-        .implicitlyWait(10, TimeUnit.SECONDS);
+        .implicitlyWait(Duration.ofSeconds(10));
   }
 
   @AfterAll

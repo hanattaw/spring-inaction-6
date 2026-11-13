@@ -1,6 +1,6 @@
 package tacos;
 
-import java.util.concurrent.TimeUnit;
+import java.time.Duration;
 
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.AfterAll;
@@ -24,7 +24,7 @@ public class HomePageBrowserTest {
     browser = new HtmlUnitDriver();
 
     browser.manage().timeouts()
-          .implicitlyWait(10, TimeUnit.SECONDS);
+          .implicitlyWait(Duration.ofSeconds(10));
   }
 
   @AfterAll
