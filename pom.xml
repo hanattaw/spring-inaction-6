@@ -17,11 +17,11 @@
         <module>ch03/tacos-sd-jpa</module>
         <module>ch03/tacos-sd-jdbc</module>
         <!-- <module>ch04/tacos-sd-cassandra</module>
-        <module>ch04/tacos-sd-mongodb</module>
+        <module>ch04/tacos-sd-mongodb</module> -->
         <module>ch05/taco-cloud</module>
         <module>ch05/taco-cloud-sfc</module>
         <module>ch06/taco-cloud</module>
-        <module>ch07</module>
+        <!-- <module>ch07</module>
         <module>ch08/auth-server</module>
         <module>ch08/tacocloud</module>
         <module>ch08/tacocloud-admin</module>
