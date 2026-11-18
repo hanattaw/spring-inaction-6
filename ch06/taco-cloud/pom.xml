@@ -5,11 +5,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>sia</groupId>
-	<artifactId>taco-cloud</artifactId>
+	<artifactId>taco-cloud-cf</artifactId>
 	<version>0.0.6-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>taco-cloud</name>
+	<name>taco-cloud-cf</name>
 	<description>Taco Cloud Example</description>
 
 	<parent>
