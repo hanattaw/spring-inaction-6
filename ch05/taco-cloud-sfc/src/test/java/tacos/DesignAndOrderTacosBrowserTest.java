@@ -16,7 +16,6 @@ import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.context.SpringBootTest.WebEnvironment;
-import org.springframework.boot.resttestclient.TestRestTemplate;
 import org.springframework.boot.test.web.server.LocalServerPort;
 
 @SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
@@ -27,9 +26,6 @@ public class DesignAndOrderTacosBrowserTest {
 
   @LocalServerPort
   private int port;
-
-  @Autowired
-  TestRestTemplate rest;
 
   @BeforeAll
   public static void setup() {
